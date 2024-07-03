@@ -1,0 +1,7 @@
+.foreground {
+    background-color: gray;
+}
+
+body {
+    display: flex;
+}
