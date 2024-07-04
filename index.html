@@ -7,17 +7,19 @@
     </head>
     <body>
         <div class="side-image">
-            <img class="background" src="imgs/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="Picture of space" height="120" width="120">
-            <img class="foreground" src="imgs/odin-lined.png" alt="Image of odin">
+            <div class="odinlayer">
+                    <img class="front" src="imgs/odin-lined.png">
+                    <p class="ftext">ODIN</p>
+            </div>
         </div>
 
         <div class="right-side">
             <div class="text">
-                <p>This is</p>
+                <p>This is not a real online service! You known you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
             </div>
-            <div class="form">
-                <form id="odin" action="" method="get" class="sign-up">
-                <legend>Let's do this!</legend>
+            <form id="odin" action="" method="get" class="sign-up">
+                <div class="mainform">
                     <div class="form-data">
                         <label id="fname">FIRST NAME</label>
                         <input id="fname" name="fname" type="text">
@@ -42,11 +44,13 @@
                         <label id="confirmpw">CONFIRM PASSWORD</label>
                         <input id="confirmpw" name="confirmpw" type="password">
                     </div>
-                </form>
-
-            </div>
-            <div class="button">
-                <button type="submit" form="odin">Create Account</button>
+                </div>
+                <div class="form-button">
+                    <button>Create Account</button>
+                </div>
+            </form>
+            <div class="log-in">Already have an account?
+                <a href="">Log In</a>
             </div>
         </div>
 

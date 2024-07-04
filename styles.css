@@ -1,7 +1,152 @@
-.foreground {
-    background-color: gray;
+@font-face {
+    font-family: 'Odin';
+    src: url('/fonts/Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
+:root {
+    --txt: rgb(104, 95, 95);
+    
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
+    font-family: 'Odin', sans-serif, 'Arial';
     display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+
+
+/* Content Bar */
+
+.side-image {
+    width: 40%;
+    border: 1px black solid;
+    background-image: url("imgs/nasa-Q1p7bh3SHj8-unsplash.jpg");
+    background-size: auto;
+}
+
+.odinlayer {
+    height: auto;
+    display:flex;
+    flex-flow: row wrap;
+    background-color: rgba(121, 110, 110, 0.16);
+    position: relative;
+    top: 20%;
+
+    justify-content: center;
+    align-items: center;    
+}
+.ftext {
+    color:white;
+    font-size: 5vh;
+    }
+
+.front {
+    height: 10vh;
+}
+
+
+/* Right Side */
+
+
+.right-side {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: rgb(235, 235, 235);
+}
+
+.mainform,
+.text,
+.form-button {
+    padding: 40px;
+}
+
+.log-in {
+    padding: 5px 40px;
+}
+
+.text{
+    font-size: 20px;
+    max-width: 60ch;
+}
+
+.text p {
+    margin-bottom: 20px;
+}
+/* Form */
+
+.mainform {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:rgb(242, 241, 240);
+    box-shadow: 2px 2px 4px rgb(134, 125, 125);
+}
+
+.form-data {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    font-size: 14px;
+
+}
+
+.form-data label {
+    margin-bottom: 5px;
+    color: var(--txt);
+}
+
+.form-data input {
+    border-style: none;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.form-data input:focus {
+    background-color: #aac1e0;
+
+}
+
+.form-data input:invalid {
+    border: 1px solid red;
+    background-color: rgb(244, 144, 144);
+}
+
+
+
+.form-button button {
+    border-radius: 3px;
+    border-style: none;
+    color:white;
+    background: gray;
+    font-size:16px;
+    padding: 10px 40px;
+}
+
+.form-button button:hover {
+    background: lightgray;
+}
+
+pw:invalid,
+confirmpw:invalid {
+    border: 1px solid red;
+    background-color: rgb(244, 144, 144);
 }
